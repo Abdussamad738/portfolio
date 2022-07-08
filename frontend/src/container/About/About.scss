@@ -1,0 +1,133 @@
+
+// #about{
+   
+//     background-size: cover;
+//     background-position: center;
+//     background-repeat: repeat;
+// }
+
+.app__about {
+    flex: 1;
+    width: 100%;
+    flex-direction: column;
+    
+  }
+  .about__text{
+    font-size: 2.75rem;
+    font-weight: 800;
+    text-align: center;
+    color: #ccd6f6;
+    text-transform: capitalize;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+
+    // span {
+    //   color: var(--secondary-color);
+    // }
+  
+    @media screen and (min-width: 2000px) {
+      font-size: 4rem;
+    }
+  
+    @media screen and (max-width: 450px) {
+      font-size: 2rem;
+    }
+
+
+
+  }
+  
+
+  .p-about {
+    font-size: 1.5rem;
+    text-align: left;
+    color: #081935;
+    background-color: #c9d0dcb4;
+    font-family: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+    line-height: 1.5;
+    margin: 0px 0px 15px 2px;
+    border: 1mm;
+    margin: 1rem 0;
+      padding: 1rem 1rem 1rem 1rem;
+      border-radius: 10px;
+      cursor: pointer;
+      box-shadow: 5px 5px 10px grey;
+  
+    @media screen and (min-width: 2000px) {
+      font-size: 1.75rem;
+      display: block;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+    }
+    @media screen and (min-width: 2000px) {
+      font-size: 1.25rem;
+      display: block;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+    }
+  }
+  .app__profiles {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+  }
+  
+  .app__profile-item {
+    width: 190px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 2rem;
+  
+    img {
+      width: 100%;
+      height: 170px;
+      border-radius: 15px;
+      object-fit: cover;
+    }
+  
+    @media screen and (min-width: 2000px) {
+      width: 370px;
+      margin: 2rem 4rem;
+  
+      img {
+        height: 320px;
+      }
+    }
+  }
+
+  .about_me{
+    
+      width: 100px;
+      height: 100px;
+      margin-left: 3rem;
+      
+      border-radius: 50%;
+      position: relative;
+  
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  
+      img {
+        width: 250px;
+        height: 250px;
+      }
+    
+      
+    
+
+  }
+  .inner{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 50px;
+  }
+  // .aboutbg{
+  //   background: url("../../assets/aboutbg.png");
+  // }
