@@ -8,9 +8,7 @@
     background-color: #313138;
   }
   
-  .app__primarybg {
-    // background-color: var(--primary-color);
-  }
+  
   
   .app__container {
     width: 100%;
@@ -53,10 +51,11 @@
   }
   
   .head-text {
-    font-size: 2.75rem;
-    font-weight: 800;
+    font-size: 2.5rem;
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+    font-weight: 600;
     text-align: center;
-    color: var(--black-color);
+    color: #744d2c;
     text-transform: capitalize;
   
     span {

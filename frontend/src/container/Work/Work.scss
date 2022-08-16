@@ -2,8 +2,20 @@
     flex: 1;
     width: 100%;
     flex-direction: column;
+    background-color: #746052d6;
+    @media screen and (max-width:500px){
+      border-radius: 1%;
+    }
+
+    @media screen and (min-width: 500px) {
+      border-radius: 1%;
+    }
   }
   
+  .head-text1{
+    color: #ede5d469;
+    margin-top: 3.5rem;
+  }
   .app__work-filter {
     display: flex;
     flex-direction: row;
@@ -49,8 +61,10 @@
   
     .app__work-item {
       width: 270px;
+      height:500px;
       flex-direction: column;
-  
+      flex-wrap: wrap;
+      
       margin: 2rem;
       padding: 1rem;
       border-radius: 0.5rem;
@@ -78,17 +92,15 @@
   }
   
   .app__work-img {
-    width: 100%;
-    height: 230px;
+    width: 200px;
+    height: 150px;
+    // padding-top: 1rem;
   
     position: relative;
+    border-radius: 0.5rem;
+      object-fit: fill;
   
-    img {
-      width: 100%;
-      height: 100%;
-      border-radius: 0.5rem;
-      object-fit: cover;
-    }
+    
   
     @media screen and (min-width: 2000px) {
       height: 350px;
@@ -135,6 +147,7 @@
     width: 100%;
     position: relative;
     flex-direction: column;
+    flex-wrap: wrap;
   
     h4 {
       margin-top: 1rem;
@@ -153,4 +166,34 @@
       background-color: #fff;
       top: -25px;
     }
+  }
+  .p-text1{
+    font-family: Quicksand,sans-serif;
+    font-weight: 500;
+    font-size: small;
+    color: #272020;
+    text-align: left;
+    line-height: 150%;
+    word-spacing: 125%;
+    letter-spacing: 110%;
+    flex-wrap: wrap;
+
+  }
+
+  .work-name{
+    font-family: Quicksand,sans-serif;
+    font-weight: 700;
+    font-size: large;
+    color: #3d1b1be7;
+    text-align: center;
+    line-height: 150%;
+    word-spacing: 125%;
+    letter-spacing: 125%;
+
+  }
+  .work-date{
+    color: rgb(4, 63, 172);
+  }
+  .work-role{
+    color: rgb(30, 61, 15);
   }

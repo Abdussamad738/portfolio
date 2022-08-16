@@ -171,3 +171,21 @@
       display: none;
     }
   }
+
+  .resumeButton{
+    background-color: rgba(32, 48, 65, 0.788);
+    font-family: "DM Sans", sans-serif;
+  border-radius: 5%;
+  border: none;
+  width: 150px;
+  height: 40px;
+  
+  
+  color: white;
+  // padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+  }
+  .resumeButton:hover {
+    background-color: rgb(52, 26, 77);
+  }

@@ -10,16 +10,21 @@
     flex: 1;
     width: 100%;
     flex-direction: column;
+    background-color: #425575c7;
+    margin: 2px 2px 2px 2px;
+    padding: 2px 2px 2px 2px;
     
   }
   .about__text{
-    font-size: 2.75rem;
-    font-weight: 800;
+    font-size: 2.5rem;
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+    font-weight: 500;
     text-align: center;
     color: #ccd6f6;
     text-transform: capitalize;
-    padding-bottom: 2rem;
-    margin-bottom: 2rem;
+    
+    
+    margin-top: 0rem;
 
     // span {
     //   color: var(--secondary-color);
@@ -39,19 +44,23 @@
   
 
   .p-about {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     text-align: left;
-    color: #081935;
-    background-color: #c9d0dcb4;
-    font-family: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
-    line-height: 1.5;
-    margin: 0px 0px 15px 2px;
+    font-weight: 500;
+    font-display: swap;
+    align-items: center;
+    color: #c3ccda;
+    // background-color: #c9d0dcb4;
+    // font-family: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+    font-family: 'Inconsolata',monospace;
+    line-height: 2.5rem;
+    margin: 0px 0px 0px 2px;
     border: 1mm;
-    margin: 1rem 0;
-      padding: 1rem 1rem 1rem 1rem;
+    
+      padding: 5% 15% 0% 15%;
       border-radius: 10px;
       cursor: pointer;
-      box-shadow: 5px 5px 10px grey;
+      // box-shadow: 5px 5px 10px grey;
   
     @media screen and (min-width: 2000px) {
       font-size: 1.75rem;
@@ -69,6 +78,10 @@
       margin-inline-start: 0px;
       margin-inline-end: 0px;
     }
+  }
+
+  .a__link{
+    color: #ccd6f6;
   }
   .app__profiles {
     display: flex;

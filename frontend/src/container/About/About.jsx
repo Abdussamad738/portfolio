@@ -8,6 +8,8 @@ import { images } from '../../constants';
 import '../Header/Header.scss';
 import ParticlesJs from '../particles/ParticlesJs';
 
+<link rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Inconsolata&family=Aboreto&family=Alumni+Sans+Pinstripe"></link>
 const About = () => {
   const [abouts, setAbouts] = useState([]);
 
@@ -26,20 +28,12 @@ const About = () => {
     <div className='particles' >
       
        <h2 className="about__text">About <span>Me</span> </h2> 
-      <div className="inner" >
+      
       <div className='p-about'>Passionate Software developer with experience in software development, testing, documentation across the complete development life cycle of a product. 
       I realized my curiosity in coding and problem solving while doing Engineering in Electronics and Communication. That led me to have a 2 year post graduate diploma Full stack course in Toronto. 
       Within these years i have worked for a <a className="a__link" href="https://www.cognizant.com/ca/en">MNC</a> and a <a className="a__link"href="https://softcovision.com/">Start-up</a>. Developed Web applications using cutting-edge technologies like React, Angular, Spring, Flask, NodeJs, Express and adding more soon..</div>
-      <motion.div
-            whileInView={{ opacity: 1 }}
-            whileHover={{ scale: 1.1 }}
-            transition={{ duration: 1, type: 'tween' }}
-            className="about_me"
-            
-          >
-            <img src={images.studying} alt="studying" />
-          </motion.div>
-      </div>
+      
+      
 
       <div className="app__profiles">
         {abouts.map((about, index) => (
@@ -63,6 +57,7 @@ const About = () => {
 
 export default AppWrap(
   MotionWrap(About, 'app__about','particles'),
+  'about',
   
   
 );
