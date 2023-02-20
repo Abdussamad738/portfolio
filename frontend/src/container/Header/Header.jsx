@@ -1,10 +1,16 @@
-import React from 'react';
-import { motion } from 'framer-motion';
 
+import { motion } from 'framer-motion';
+import { render } from 'react-dom'
+import React, { useState, useEffect } from 'react'
+import { useTransition, animated, config } from 'react-spring'
+import ImageSlider, { Slide } from "react-auto-image-slider";
 import { AppWrap } from '../../wrapper';
 import { images } from '../../constants';
 import './Header.scss';
 
+import 'react-slideshow-image/dist/styles.css'
+import { urlFor } from '../../client';
+import bg from '../../assets/circle.svg'
 const scaleVariants = {
   whileInView: {
     scale: [0, 1],
@@ -16,7 +22,16 @@ const scaleVariants = {
   },
 };
 
-const Header = () => (
+
+// profile slides
+
+
+const Header = () => {
+
+  
+  
+    return (
+      <>
   <div className="app__header app__flex">
     <motion.div
       whileInView={{ x: [-100, 0], opacity: [0, 1] }}
@@ -38,20 +53,48 @@ const Header = () => (
       </div>
     </motion.div>
 
-    <motion.div
+    
+
+    {/* <motion.div
       whileInView={{ opacity: [0, 1] }}
       transition={{ duration: 0.5, delayChildren: 0.5 }}
       className="app__header-img"
-    >
-      <img src={images.profile} alt="profile_bg" />
-      <motion.img
+     }}
+     > */}
+
+
+     
+      <div className="app__header-img" style={{backgroundImage: `url(${bg})`,backgroundRepeat: "no-repeat"}}>
+    <ImageSlider className="profile_bg" style={{maxWidth:"50%"}}effectDelay={500} autoPlayDelay={2000}>
+      <Slide>
+        <img alt="img1" src={images.profile1} />
+      </Slide>
+      <Slide>
+        <img alt="img2" src={images.profile} />
+      </Slide>
+      <Slide>
+        <img alt="img3" src={images.profile2} />
+      </Slide>
+      <Slide>
+        <img alt="img4" src={images.profile3}/>
+      </Slide>
+    </ImageSlider>
+    </div>
+    
+      
+
+  
+      
+      {/* <motion.img
         whileInView={{ scale: [0, 1] }}
         transition={{ duration: 1, ease: 'easeInOut' }}
         src={images.circle}
         alt="profile_circle"
+        
         className="overlay_circle"
       />
-    </motion.div>
+       */}
+    {/* </motion.div> */}
 
     <motion.div
       variants={scaleVariants}
@@ -65,6 +108,8 @@ const Header = () => (
       ))}
     </motion.div>
   </div>
-);
+  </>
+    );
+};
 
 export default AppWrap(Header, 'home');
