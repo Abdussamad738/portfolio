@@ -1,6 +1,5 @@
 import React from 'react';
 
-import ParticlesJs from "react-tsparticles" ;
 
 
 import Particles from "react-tsparticles";
@@ -17,6 +16,7 @@ const ParticlesComponent = (props) => {
     // all options can be found here: https://particles.js.org/docs/interfaces/Options_Interfaces_IOptions.IOptions.html
     return {
       background: {
+        size:"fill",
         color: "#000", // this sets a background color for the canvas
       },
       fullScreen: {

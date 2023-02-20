@@ -65,7 +65,7 @@ const Header = () => {
 
      
       <div className="app__header-img" style={{backgroundImage: `url(${bg})`,backgroundRepeat: "no-repeat"}}>
-    <ImageSlider className="profile_bg" style={{maxWidth:"50%"}}effectDelay={500} autoPlayDelay={2000}>
+    <ImageSlider className="profile_bg" effectDelay={500} autoPlayDelay={2000}>
       <Slide>
         <img alt="img1" src={images.profile1} />
       </Slide>
