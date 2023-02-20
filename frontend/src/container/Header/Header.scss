@@ -1,4 +1,5 @@
 @import 'react-slideshow-image/dist/styles.css';
+
 #home {
     position: relative;
     background: url("../../assets/bgIMG.png");
@@ -18,8 +19,8 @@
   
   .app__header {
     flex: 1;
-    width: 100%;
-    height: 100%;
+    // width: 100%;
+    // height: 100%;
     flex-direction: row;
   
     padding: 6rem 2rem 0rem;
@@ -226,7 +227,7 @@
 .profile_bg{
   img{
     max-width:250px;
-    height:150px;
+    height:40%;
   }
   
   position: relative;
@@ -242,28 +243,30 @@
     
     
     position: relative;
-    object-fit: fill;
-    background-size: contain;
+    // object-fit: fill;
+    background-size: cover;
 
     
 
     @media screen and (max-width: 450px) {
       top: 0%;
-      
+      bottom: 10%;
       width:80%;
       height:40%;
+      background-size: contain;
     }
 
     @media screen and (min-width:450px)and(max-width: 1200px) {
-      top: 10%;
+      top: 0%;
       width:70%;
-      height:30%;
+      height:40% !important;
+      
     }
 
-    @media screen and (min-width:1200px)and (max-width: 2000px) {
+    @media screen and (min-width:1200px)and (max-width: 4000px) {
       
       width:10%;
-      height:65%;
+      height:50%;
       top: 10%;
       // margin-top: 8rem;
       // background-size:" contain";
@@ -290,15 +293,18 @@
         margin-top: 0rem;
       }
       @media screen and (min-width:450px)and(max-width: 1200px) {
+        position: relative!important;
+        bottom: -45%!important;
         width:100%;
-        height:60%;
+        height:40%!important;
       }
 
-      @media screen and (min-width:1200px)and (max-width: 2000px) {
-      
+      @media screen and (min-width:1200px)and (max-width: 4000px) {
+        position: relative!important;
+        bottom: -45%!important;
         width:10%;
-        height:40%;
-        margin-top: 8rem;
+        height:50%!important;;
+       
       margin-left: 0rem;
       margin-bottom: 0rem;
       
