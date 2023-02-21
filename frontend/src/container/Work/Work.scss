@@ -2,14 +2,11 @@
     flex: 1;
     width: 100%;
     flex-direction: column;
-    background-color: #746052d6;
-    @media screen and (max-width:500px){
-      border-radius: 1%;
-    }
-
-    @media screen and (min-width: 500px) {
-      border-radius: 1%;
-    }
+    background-color: #091d26d1;
+    border-radius: 7px;
+    border-style: groove;
+    border-color: #26684a;
+    
   }
   
   .head-text1{
@@ -68,7 +65,9 @@
       margin: 2rem;
       padding: 1rem;
       border-radius: 0.5rem;
-      background-color: #fff;
+      background-color: #a6c7ef;
+      border-style: ridge;
+      border-color: #cce6b3;
       color: #000;
   
       cursor: pointer;
