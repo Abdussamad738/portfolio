@@ -88,7 +88,7 @@ const Work = () => {
                 key={index}
                 // transition={{ duration: 0.5, delayChildren: 0.5 }}
                 whileInView={{ opacity: [0, 1] }}
-                whileHover={{ scale: 1.1 }}
+                whileHover={{ scale: 1.05 }}
                 
                 
                 
@@ -96,7 +96,7 @@ const Work = () => {
                 <a href={work.link}>
                 <ConsoleLog>{work.link}</ConsoleLog>
             
-            <img className="app__work-img" src={urlFor(work.icon).url()}  alt={work.name} /></a>
+            <motion.img className="app__work-img" whileHover={{ scale: 1.1 }} src={urlFor(work.icon).url()}  alt={work.name} /></a>
               
               <h4 className="work-name">{work.name} </h4>
               <h4 className='work-role'>{work.role}</h4>
