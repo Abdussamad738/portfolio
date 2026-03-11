@@ -48,7 +48,6 @@ function App  ()  {
         <Work/>
         
         <Footer/>
-        <Particles id="tsparticles" />
       
     </div>
     // </ThemeContext.Provider>

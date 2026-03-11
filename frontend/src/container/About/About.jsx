@@ -26,7 +26,7 @@ const About = () => {
     {console.log(abouts)}
         
     
-    <div className='particles' >
+    <div className='app__about'>
       
        {/* <h2 className="about__text">About <span>Me</span> </h2> 
       
@@ -64,8 +64,7 @@ const About = () => {
 };
 
 export default AppWrap(
-  MotionWrap(About, 'app__about','particles'),
+  MotionWrap(About, 'app__about', 'app__aboutbg'),
   'about',
-  
-  
+  'app__aboutbg'
 );

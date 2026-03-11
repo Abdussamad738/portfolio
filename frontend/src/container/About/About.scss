@@ -1,3 +1,10 @@
+.app__aboutbg {
+  background: #213047 !important;
+  min-height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
 
 // #about{
    
@@ -6,17 +13,42 @@
 //     background-repeat: repeat;
 // }
 
+// About section background reverted to previous style
 .app__about {
-    flex: 1;
-    width: 100%;
-    flex-direction: column;
-    background-color: #425575c7;
-    border-style: groove;
-    border-color: #956c32;
-    margin: 2px 2px 2px 2px;
-    padding: 2px 2px 2px 2px;
-    
-  }
+  flex: 1;
+  width: 100%;
+  flex-direction: column;
+  min-height: unset;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  //background: #425575c7;
+  //border-style: groove;
+  //border-color: #956c32;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.about-glass-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background: linear-gradient(135deg, #c1c9d1 0%, #c9d6ff 100%);
+  opacity: 0.85;
+  backdrop-filter: blur(18px) saturate(120%);
+  -webkit-backdrop-filter: blur(18px) saturate(120%);
+}
+
+.app__profiles, .about__text, .p-about, .a__link, .app__profile-item, .profile-each-item, .bold-text-profile, .p-text-profile {
+  position: relative;
+  z-index: 1;
+}
   .about__text{
     font-size: 2.5rem;
     font-family: 'Alumni Sans Pinstripe', sans-serif;
@@ -86,24 +118,35 @@
     color: #ccd6f6;
   }
   .app__profiles {
-    display: flex;
-    justify-content: start;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    margin-top: 2rem;
-    div:nth-child(1) {
-      animation-delay: 100ms;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2.5vw;
+    width: 100%;
+    min-height: unset;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 0;
+    overflow: visible;
+    /* Center grid vertically with equal top/bottom margin */
+    align-items: center;
+    justify-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    @media screen and (max-width: 750px) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 4vw;
     }
-    div:nth-child(2) {
-      animation-delay: 200ms;
+    @media screen and (max-width: 450px) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2vw;
     }
-    div:nth-child(3) {
-      animation-delay: 100ms;
-    }
-    div:nth-child(4) {
-      animation-delay: 100ms;
-    }
-  
+  }
+
+  .app__about > *:not(.app__profiles) {
+    position: relative;
+    z-index: 1;
   }
   
 
@@ -113,6 +156,10 @@
 
 }
 .bold-text-profile{
+    font-size: 1.2rem;
+    @media screen and (max-width: 450px) {
+      font-size: 1rem;
+    }
   color: #80d5b8;
   text-shadow: 2px 2px 2px #080f1dc7;
 }
@@ -120,56 +167,56 @@
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: medium;
   color: #cc9d53;
+  @media screen and (max-width: 450px) {
+    font-size: small;
+  }
 }
 
   .app__profile-item {
-    width: 190px;
+    width: 100%;
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
     flex-direction: column;
-    margin: 2rem;
-
-  
-    
-
-    
-  
-    img {
-      width: 100%;
-      height: 170px;
-      border-radius: 15px;
-      object-fit: cover;
-    }
-  
-    @media screen and (min-width: 2000px) {
-      width: 370px;
-      margin: 2rem 4rem;
-  
-      img {
-        height: 320px;
+    align-items: center;
+    justify-content: center;
+    .p-about {
+      font-size: 0.9rem;
+      text-align: center;
+      font-weight: 400;
+      color: #c3ccda;
+      font-family: 'Inconsolata',monospace;
+      line-height: 1.5rem;
+      margin: 0.5rem 0 0 0;
+      border-radius: 10px;
+      cursor: pointer;
+      box-sizing: border-box;
+      max-width: 100%;
+      padding: 0.5rem 0.5rem 0 0.5rem;
+      @media screen and (max-width: 1024px) {
+        padding: 0.5rem 0.5rem 0 0.5rem;
+      }
+      @media screen and (max-width: 768px) {
+        padding: 0.5rem 0.5rem 0 0.5rem;
+      }
+      @media screen and (max-width: 425px) {
+        font-size: 1rem;
+      }
+      @media screen and (max-width: 375px) {
+        font-size: 0.95rem;
+      }
+      @media screen and (max-width: 320px) {
+        font-size: 0.9rem;
       }
     }
-  }
-
-  .about_me{
-    
-      width: 100px;
-      height: 100px;
-      margin-left: 3rem;
-      
-      border-radius: 50%;
-      position: relative;
   
       box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
   
       img {
-        width: 250px;
-        height: 250px;
+        width: 120px;
+        height: 120px;
       }
     
       
-    
+          /* margin removed, use gap in parent */
 
   }
   .inner{

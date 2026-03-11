@@ -1,11 +1,16 @@
+.app__workbg {
+  background: #133443e4 !important;
+  min-height: 100vh;
+  width: 100vw;
+}
 .app__works {
     flex: 1;
     width: 100%;
     flex-direction: column;
-    background-color: #091d26d1;
-    border-radius: 7px;
-    border-style: groove;
-    border-color: #26684a;
+    //background-color: #133443e4;
+    //border-radius: 7px;
+    //border-style: groove;
+    //border-color: #26684a;
     
   }
   
@@ -58,7 +63,7 @@
   
     .app__work-item {
       width: 270px;
-      height:500px;
+      height:480px;
       flex-direction: column;
       flex-wrap: wrap;
       
@@ -180,10 +185,9 @@
     color: #3d2828;
     text-align: left;
     line-height: 150%;
-    word-spacing: 125%;
-    letter-spacing: 110%;
+    word-spacing: 0%;
+    letter-spacing: 0%;
     flex-wrap: wrap;
-
   }
 
   .work-name{
@@ -193,9 +197,8 @@
     color: #3d1b1be7;
     text-align: center;
     line-height: 150%;
-    word-spacing: 125%;
-    letter-spacing: 125%;
-
+    word-spacing: 0%;
+    letter-spacing: 0%;
   }
   .work-date{
     color: rgb(4, 63, 172);
