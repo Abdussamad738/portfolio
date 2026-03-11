@@ -44,7 +44,6 @@ const Skills = () => {
     }, 500);
   };
   const ConsoleLog=({children})=>{
-    console.log(children);
     return false;
   }
 
