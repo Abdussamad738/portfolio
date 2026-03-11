@@ -43,9 +43,7 @@ const Skills = () => {
       }
     }, 500);
   };
-  const ConsoleLog=({children})=>{
-    return false;
-  }
+  
 
   return (
     
