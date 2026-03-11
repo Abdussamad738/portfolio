@@ -20,7 +20,6 @@ const Skills = () => {
     const query = '*[_type == "skills"]';
     
     client.fetch(query).then((data) => {
-      console.log(data);
       setSkills(data);
     });
 
@@ -33,7 +32,6 @@ const Skills = () => {
   const handleSkillFilter = (item) => {
     setActiveFilter(item);
     setAnimateCard([{ y: 100, opacity: 0 }]);
-    console.log("it is from handleskill filter strting");
 
     setTimeout(() => {
       setAnimateCard([{ y: 0, opacity: 1 }]);
@@ -42,7 +40,6 @@ const Skills = () => {
         setFilterSkill(skills);
       } else {
         setFilterSkill(skills.filter((skill) => skill.tags.includes(item)));
-        console.log("it is from handleskill filter else");
       }
     }, 500);
   };

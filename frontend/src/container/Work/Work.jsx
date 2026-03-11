@@ -18,7 +18,6 @@ const Work = () => {
     const query = '*[_type == "works"]';
 
     client.fetch(query).then((data) => {
-      console.log(data);
       setWorks(data);
       setFilterWork(data);
     });
@@ -45,7 +44,6 @@ const Work = () => {
   };
 
   const ConsoleLog=({children})=>{
-    console.log(children);
     return false;
   }
 

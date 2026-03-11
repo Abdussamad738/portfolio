@@ -23,7 +23,6 @@ const About = () => {
 
   return (
     <>
-    {console.log(abouts)}
         
     
     <div className='app__about'>
