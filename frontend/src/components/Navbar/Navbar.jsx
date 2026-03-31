@@ -4,6 +4,8 @@ import { HiMenuAlt4, HiX } from 'react-icons/hi';
 import { motion } from 'framer-motion';
 import Darkmode from '../Darkmode/Darkmode';
 import { images } from '../../constants';
+import resume from '../../assets/CV_AbdulSamad.pdf';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './Navbar.scss';
 // ...existing code...
 import { faDownload } from '@fortawesome/free-solid-svg-icons';

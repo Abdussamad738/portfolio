@@ -82,6 +82,6 @@ const images = {
   nb,
   skype,
   spotify,
-};
+  };
 
 export default images;

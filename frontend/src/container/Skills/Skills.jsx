@@ -11,6 +11,7 @@ const Skills = () => {
   const [skills, setSkills] = useState([]);
   const [filterSkill, setFilterSkill] = useState([]);
   const [activeFilter, setActiveFilter] = useState('All');
+  const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
 
   useEffect(() => {
 

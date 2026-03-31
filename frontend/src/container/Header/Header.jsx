@@ -8,6 +8,7 @@ import './Header.scss';
 import 'react-slideshow-image/dist/styles.css'
 import { urlFor } from '../../client';
 import bg from '../../assets/circle.svg'
+import { images } from '../../constants';
 const scaleVariants = {
   whileInView: {
     scale: [0, 1],
