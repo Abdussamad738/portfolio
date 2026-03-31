@@ -83,5 +83,5 @@ const images = {
   skype,
   spotify,
 };
-};
+
 export default images;
