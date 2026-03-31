@@ -18,21 +18,42 @@ const Footer = () => {
   };
 
   const handleSubmit = () => {
-    setLoading(true);
+    // Validation
+    if (!formData.username || formData.username.trim() === "") {
+      alert("Name cannot be blank.");
+      return;
+    }
+    if (!formData.email || !/^.+@.+\..+$/.test(formData.email)) {
+      alert("Please enter a valid email address.");
+      return;
+    }
+    // Accept emails ending with .gmail, .com, .org, .net, .edu, .in, .co, .io, etc.
+    if (!/\.(gmail|com|org|net|edu|in|co|io)$/i.test(formData.email.split("@")[1] || "")) {
+      alert("Email must end with .gmail, .com, .org, .net, .edu, .in, .co, or .io");
+      return;
+    }
+    if (!formData.message || formData.message.trim() === "") {
+      alert("Message cannot be blank.");
+      return;
+    }
 
+    setLoading(true);
     const contact = {
       _type: 'contact',
       name: formData.username,
       email: formData.email,
       message: formData.message,
     };
-
     client.create(contact)
       .then(() => {
         setLoading(false);
         setIsFormSubmitted(true);
       })
-      .catch((err) => console.log(err));
+      .catch((err) => {
+        setLoading(false);
+        alert("Failed to send message. Please try again later.");
+        console.log(err);
+      });
   };
 
   return (
