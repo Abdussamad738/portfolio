@@ -5,9 +5,7 @@ import { motion } from 'framer-motion';
 import Darkmode from '../Darkmode/Darkmode';
 import { images } from '../../constants';
 import './Navbar.scss';
-import DarkMode from '../Darkmode/Darkmode';
-import resume from '../../assets/CV_AbdulSamad.pdf';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// ...existing code...
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
 
 <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"></link>

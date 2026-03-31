@@ -4,10 +4,7 @@
 import React from 'react'
 import {About,Footer,Header,Skills,Work} from './container'
 import { Navbar } from './components';
-import ParticlesJs from './container/particles/ParticlesJs';
-import Particles from '../src/container/particles/ParticlesJs';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faDownload } from '@fortawesome/free-solid-svg-icons';
+// ...existing code...
 // import DarkMode from './components/Darkmode/Darkmode';
 import './App.scss';
 // import {keepTheme} from './components/utils/themes'

@@ -4,9 +4,7 @@ import { motion } from 'framer-motion';
 import { AppWrap, MotionWrap } from '../../wrapper';
 import './About.scss';
 import { urlFor, client } from '../../client';
-import { images } from '../../constants';
 import '../Header/Header.scss';
-import ParticlesJs from '../particles/ParticlesJs';
 
 <link rel="stylesheet"
   href="https://fonts.googleapis.com/css?family=Inconsolata&family=Aboreto&family=Alumni+Sans+Pinstripe"></link>

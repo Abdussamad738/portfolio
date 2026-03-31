@@ -1,11 +1,8 @@
 
 import { motion } from 'framer-motion';
-import { render } from 'react-dom'
-import React, { useState, useEffect } from 'react'
-import { useTransition, animated, config } from 'react-spring'
+import React from 'react'
 import ImageSlider, { Slide } from "react-auto-image-slider";
 import { AppWrap } from '../../wrapper';
-import { images } from '../../constants';
 import './Header.scss';
 
 import 'react-slideshow-image/dist/styles.css'
