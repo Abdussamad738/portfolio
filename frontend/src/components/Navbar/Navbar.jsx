@@ -2,8 +2,7 @@
 import React, { useState } from 'react';
 import { HiMenuAlt4, HiX } from 'react-icons/hi';
 import { motion } from 'framer-motion';
-import Darkmode from '../Darkmode/Darkmode';
-import { images } from '../../constants';
+// ...existing code...
 import resume from '../../assets/CV_AbdulSamad.pdf';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './Navbar.scss';
